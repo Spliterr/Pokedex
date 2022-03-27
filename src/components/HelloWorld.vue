@@ -28,20 +28,28 @@
           <p>
             Here you will find an application that consumes the PokeAPI API. It
             lists the Pokemon game generation, where some information is
-            displayed: pokemon count by generation, main region, movements,
+            displayed: pokemon count by generation, Região, movements,
             species, etc...
           </p>
         </div>
         <img
-          src="https://i.pinimg.com/originals/26/b5/55/26b5551ba10f013a335e91b98f530d51.png"
+          src="../assets/img/herobg.png"
           alt="all pokemon image"
           class="heroPara"
         />
       </section>
     </div>
-    <h2 class="mt-3">Gerações de Pokemon</h2>
+
+    <!-- Título que vai demonstrar os cards das gerações pokemons -->
+    <div class="mid-division">
+      <h1 class="mt-3">Gerações de Pokemon</h1>
+    </div>
+
+    <!-- Cards -->
     <section class="container mt-4">
       <div class="grid-card">
+
+        <!-- Card Primeira Geração -->
         <div class="card">
           <img
             class="card-img-top"
@@ -52,18 +60,34 @@
           />
           <div class="card-body">
             <h4 class="card-title">1ª Geração</h4>
-            <p class="card-text">Main region: Kanto</p>
-            <p>
-              Version groups: <br />
-              red-blue <br />
-              yellow
+            <p class="card-text">Região: Kanto</p>
+            <p class="card-versions">
+              <b>Versões:</b> <br/>
+              Red-Blue <br/>
+              Yellow <br/>
+              Yellow
+
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">165</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">151</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Card Segunda Geração -->
         <div class="card">
           <img
             class="card-img-top"
@@ -74,18 +98,33 @@
           />
           <div class="card-body">
             <h4 class="card-title">2ª Geração</h4>
-            <p class="card-text">Main region: Kanto</p>
+            <p>Região: Johto</p>
             <p>
-              Version groups: <br />
-              red-blue <br />
-              yellow
+              <b>Versões:</b> <br/>
+              Gold-Silver <br/>
+              Crystal <br/>
+              Crystal
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">86</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">100</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
+        
+        <!-- Card Terceira Geração -->
         <div class="card">
           <img
             class="card-img-top"
@@ -96,13 +135,14 @@
           />
           <div class="card-body">
             <h4 class="card-title">3ª Geração</h4>
-            <p class="card-text">Main region: John</p>
+            <p class="card-text">Região: Hoenn</p>
             <p>
-              Version groups: <br />
-              gold-silver <br />
-              crystaL
+              <b>Versões:</b> <br/>
+              Ruby-Sapphire <br/>
+              Emerald <br/>
+              FireRed-LeafGreen
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
           <div>
             <div
@@ -111,15 +151,17 @@
             >
               <div class="one-third-slash">
                 <div class="stat">121</div>
-                <div class="stat-value">Different moves</div>
+                <div class="stat-value">Movimentos Diferentes</div>
               </div>
               <div class="one-third">
                 <div class="stat">135</div>
-                <div class="stat-value">Pokemon count</div>
+                <div class="stat-value">Pokemons</div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Card Quarta Geração -->
         <div class="card">
           <img
             class="card-img-top"
@@ -130,42 +172,70 @@
           />
           <div class="card-body">
             <h4 class="card-title">4ª Geração</h4>
-            <p class="card-text">Main region: Hoenn</p>
+            <p class="card-text">Região: Sinnoh</p>
             <p>
-              Version groups: <br />
-              ruby-sapphire <br />
-              emerald <br />
-              firered-leafgreen
+              <b>Versões:</b> <br/>
+              Diamond-Pearl <br/>
+              Platinum <br/>
+              HeartGold-SoulSilver
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">113</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">107</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Card Quinta Geração -->
         <div class="card">
           <img
             class="card-img-top"
             data-src="holder.js/100px180/"
             alt="100%x180"
-            src="https://www.serebii.net/pokemon/art/494.png"
+            src="https://www.serebii.net/pokemon/art/495.png"
             data-holder-rendered="true"
           />
           <div class="card-body">
             <h4 class="card-title">5ª Geração</h4>
-            <p class="card-text">Main region: Sinnoh</p>
+            <p class="card-text">Região: Unova</p>
             <p>
-              Version groups: <br />
-              diamond-pearl <br />
-              platinum <br />
-              heartgold-soulsilver
+              <b>Versões:</b> <br/>
+              Black-White <br/>
+              Black2-White2 <br/>
+              Black-White
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">92</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">156</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Card Sexta Geração -->
         <div class="card">
           <img
             class="card-img-top"
@@ -176,64 +246,113 @@
           />
           <div class="card-body">
             <h4 class="card-title">6ª Geração</h4>
-            <p class="card-text">Main region: Unova</p>
+            <p class="card-text">Região: Kalos</p>
             <p>
-              Version groups: <br />
-              black-white <br />
-              black-2-white-2
+              <b>Versões:</b> <br/>
+              X-Y <br/>
+              OmegaRuby-AlphaSapphire <br/>
+              X-Y
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">62</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">72</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Card Sétima Geração -->
         <div class="card">
           <img
             class="card-img-top"
             data-src="holder.js/100px180/"
             alt="100%x180"
-            src="https://www.serebii.net/pokemon/art/650.png"
+            src="https://www.serebii.net/pokemon/art/722.png"
             data-holder-rendered="true"
           />
           <div class="card-body">
             <h4 class="card-title">7ª Geração</h4>
-            <p class="card-text">Main region: Alola</p>
+            <p class="card-text">Região: Alola</p>
             <p>
-              Version groups: <br />
-              sun-moon <br />
-              ultra-sun-ultra-moon <br />
-              lets-go-pikachu-lets-go-eevee <br />
+              <b>Versões:</b> <br/>
+              Sun-Moon <br/>
+              UltraSun-UltraMoon <br/>
+              Let's Go Pikachu- Let's go Eevee
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">121</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">88</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Card Oitava Geração -->
         <div class="card">
           <img
             class="card-img-top"
             data-src="holder.js/100px180/"
             alt="100%x180"
-            src="https://www.serebii.net/pokemon/art/650.png"
+            src="https://www.serebii.net/pokemon/art/810.png"
             data-holder-rendered="true"
           />
           <div class="card-body">
             <h4 class="card-title">8ª Geração</h4>
-            <p class="card-text">Main region: Galar</p>
+            <p class="card-text">Região: Galar</p>
             <p>
-              Version groups: <br />
-              sword-shield
+              <b>Versões:</b> <br/>
+              Sword-Shield <br/>
+              Sword-Shield <br/>
+              Sword-Shield <br/>
             </p>
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">Explorar</button>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div>
+            <div
+              data-v-3b81dd4c=""
+              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+            >
+              <div class="one-third-slash">
+                <div class="stat">84</div>
+                <div class="stat-value">Movimentos Diferentes</div>
+              </div>
+              <div class="one-third">
+                <div class="stat">89</div>
+                <div class="stat-value">Pokemons</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        Pokedex &copy; 2022
+    </footer>
+
   </div>
 </template>
 
@@ -323,6 +442,7 @@ Cor da fonte muda para branco, 0,2s de transição */
 h4 {
   font-weight: bold;
 }
+
 .card {
   min-width: 330px;
   min-height: 542px;
@@ -332,6 +452,10 @@ h4 {
 
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
+
+  /* Borda do Card 0px e cor da borda do card transparente para evitar bordas brancas */
+  border: 0px;
+  border-color: transparent;
 }
 
 .card-img-top {
@@ -339,15 +463,17 @@ h4 {
   width: 15rem;
 }
 
+/* Tamanho do botão explorar */
 .btn {
-  width: 150px;
+  width: 300px;
 }
 
 .poke-card__unit-stats {
   color: #fff;
   font-weight: 700;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  /* Border radius 13px igual o do card para evitar bordas brancas */
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
 }
 
 .poke-card__unit-stats .one-third {
@@ -364,5 +490,16 @@ h4 {
   float: left;
   padding: 25px 27px;
   border-right: 1px solid #2b3341;
+}
+
+/* Define a cor de fundo do footer, altura e alinhamento do texto */
+#footer{
+  margin-top: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #313131;
+  color: white;
 }
 </style>
