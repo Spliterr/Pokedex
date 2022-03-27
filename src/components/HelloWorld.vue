@@ -102,7 +102,7 @@
             </p>
             <button class="btn btn-secondary">Explore</button>
           </div>
-          <div class="card-footer">
+          <div>
             <div
               data-v-3b81dd4c=""
               class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
@@ -328,7 +328,7 @@ h4 {
 .poke-card__unit-stats .one-third {
   width: 50%;
   float: left;
-  padding: 20px 27px;
+  padding: 25px 27px;
 }
 .poke-card__unit-stats--poke {
   background: #5f5f5f;
@@ -337,7 +337,7 @@ h4 {
 .poke-card__unit-stats .one-third-slash {
   width: 50%;
   float: left;
-  padding: 20px 27px;
+  padding: 25px 27px;
   border-right: 1px solid #2b3341;
 }
 </style>
