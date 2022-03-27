@@ -1,20 +1,22 @@
 <template>
   <div>
-    <b-navbar type="light" variant="success">
+    <!-- Navbar -->
+    <b-navbar class="Navbar-Pokemon" type="dark">
       <b-navbar-nav class="navbar">
-        <img class="logomarca" src="../assets/img/025.png" alt="Logo marca" />
+        <!-- Logo do site -->
+        <img class="logomarca" src="../assets/img/logo.png" alt="Pokedex" />
+        
         <b-nav-item href="#">Home</b-nav-item>
-
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Geração Pokemon" right>
-          <b-dropdown-item href="#">Primeira</b-dropdown-item>
-          <b-dropdown-item href="#">Segunda</b-dropdown-item>
-          <b-dropdown-item href="#">Terceira</b-dropdown-item>
-          <b-dropdown-item href="#">Quarta</b-dropdown-item>
-          <b-dropdown-item href="#">Quinta</b-dropdown-item>
-          <b-dropdown-item href="#">Sexta</b-dropdown-item>
-          <b-dropdown-item href="#">Setima</b-dropdown-item>
-          <b-dropdown-item href="#">Oitava</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Primeira Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Segunda Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Terceira Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Quarta Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Quinta Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Sexta Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Sétima Geração</b-dropdown-item>
+          <b-dropdown-item href="#" class="drop-geracao">Oitava Geração</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-navbar>
@@ -236,20 +238,43 @@
 </template>
 
 <script>
+
 export default {};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* Tamanho da logo */
 .logomarca {
-  max-width: 80px;
+  max-width: 70px;
   margin-left: 10px;
 }
+
+/* Tamanho da Navbar e definições da fonte */
 .navbar {
   display: flex;
   align-items: center;
   font-size: 23px;
-  height: 85px;
+  font-family: helvetica;
+  height: 100px;
+}
+
+/* Cor da Navbar Cinza Escuro (#313131) */
+.Navbar-Pokemon {
+  background-color: #313131;
+}
+
+/* A fonte fica branca ao passar o mouse pelo menu, 0.5 seg de transição */
+.Navbar-Pokemon :hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* Cor de fundo ao passar o mouse muda para cinza claro;
+Cor da fonte muda para branco, 0,2s de transição */
+.drop-geracao :hover{
+  background-color: #616161;
+  transition: 0.18s;
+  color: white;
 }
 
 .container {
