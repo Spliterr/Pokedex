@@ -7,9 +7,9 @@
         <div class="hero-text-content">
           <h1>Bem vindo ao Pokedex</h1>
           <p>
-            Here you will find an application that consumes the PokeAPI API. It
-            lists the Pokemon game generation, where some information is
-            displayed: pokemon count by generation, Região, movements, species,
+            Aqui você encontrará uma aplicação que consome a API PokeAPI. Ela
+            lista as geraçãoes do jogo Pokémon, onde algumas informações são
+            exibidas: contagem de pokémons por geração, Região, movimentos, espécies,
             etc...
           </p>
         </div>
