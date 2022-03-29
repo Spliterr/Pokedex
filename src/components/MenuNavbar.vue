@@ -38,11 +38,13 @@
 </template>
 
 <script>
-
+  export default{
+    name: 'MenuNavbar',
+  }
 </script>
 
 
-<style>
+<style scoped>
 /* Tamanho da logo */
 .logomarca {
   max-width: 70px;

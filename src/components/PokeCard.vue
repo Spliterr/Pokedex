@@ -1,33 +1,4 @@
 <template>
-  <div>
-    <menu-navbar />
-
-    <div>
-      <section class="hero">
-        <div class="hero-text-content">
-          <h1>Bem vindo ao Pokedex</h1>
-          <p>
-            Aqui você encontrará uma aplicação que consome a API PokeAPI. Ela
-            lista as geraçãoes do jogo Pokémon, onde algumas informações são
-            exibidas: contagem de pokémons por geração, Região, movimentos, espécies,
-            etc...
-          </p>
-        </div>
-        <img
-          src="../../assets/img/herobg.png"
-          alt="all pokemon image"
-          class="heroPara"
-        />
-      </section>
-    </div>
-
-    <!-- Título que vai demonstrar os cards das gerações pokemons -->
-    <div class="mid-division">
-      <h1 class="mt-3">Gerações de Pokemon</h1>
-    </div>
-
-    <!-- Cards -->
-    <section class="container mt-4">
       <div class="grid-card">
         <!-- Card Primeira Geração -->
         <div class="card">
@@ -325,78 +296,15 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer"> 
-      <div class="footer-content">
-        <h3>Pokedex</h3>
-        <p>A melhor forma de classificar seus pokemons.</p>
-        <ul class="social">
-          <li><a href="https://twitter.com/pokemon" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
-          <li><a href="https://www.facebook.com/Pokemon/" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a></li>
-          <li><a href="https://www.instagram.com/pokemon/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>  
-        </ul>
-      </div>
-      <div class="footer-bottom">
-          <p>Pokedex &copy; 2022</p>
-      </div>
-    </footer>
-  </div>
 </template>
 
 <script>
-import navbar from "../MenuNavbar";
-
 export default {
-  components: {
-    "menu-navbar": navbar,
-  },
-};
+    name: 'PokeCard',
+}
 </script>
 
 <style scoped>
-/* Cor de fundo ao passar o mouse muda para cinza claro;
-Cor da fonte muda para branco, 0,2s de transição */
-.drop-geracao :hover {
-  background-color: #616161;
-  transition: 0.18s;
-  color: white;
-}
-
-.container {
-  z-index: 1;
-  position: relative;
-}
-
-.hero {
-  text-align: center;
-  height: 45vh;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-text-content {
-  display: grid;
-  max-width: 60%;
-}
-
-.hero img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1500px;
-  min-width: 100%;
-  min-height: 100%;
-  transition: 1ms;
-  filter: blur(2px);
-  z-index: -1;
-}
-
 .grid-card {
   width: 100%;
   display: grid;
@@ -459,77 +367,4 @@ h4 {
   padding: 25px 27px;
   border-right: 1px solid #2b3341;
 }
-
-/* Define a cor de fundo do footer, altura e alinhamento do texto */
-#footer {
-  background-color: #313131;
-  color: white;
-  margin-top: 30px;
-  height: auto;
-  padding-top: 30px;
-}
-
-.footer-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.footer-content h3{
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
-
-.footer-content p{
-  max-width: 500px;
-  margin: 10px, auto;
-  line-height: 28px;
-  font-size: 14px;
-}
-
-.social{
-  list-style: none;
-  display: flex;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.social li{
-  margin: 10px;
-  
-}
-
-.social a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 30px;
-}
-
-.social a:hover {
-  color:rgb(238, 255, 2);
-  
-}
-
-.footer-bottom{
-  background: black;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  margin: 0;
-}
-
-.footer-bottom p{
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-
-}
-
 </style>
