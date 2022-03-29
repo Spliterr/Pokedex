@@ -333,9 +333,9 @@
         <h3>Pokedex</h3>
         <p>A melhor forma de classificar seus pokemons.</p>
         <ul class="social">
-          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+          <li><font-awesome-icon icon="fa-brands fa-facebook" /></li>
+          <li><a href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>  
         </ul>
       </div>
       <div class="footer-bottom">
