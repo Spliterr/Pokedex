@@ -328,7 +328,20 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">Pokedex &copy; 2022</footer>
+    <footer id="footer"> 
+      <div class="footer-content">
+        <h3>Pokedex</h3>
+        <p>A melhor forma de classificar seus pokemons.</p>
+        <ul class="social">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>Pokedex &copy; 2022</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -449,12 +462,49 @@ h4 {
 
 /* Define a cor de fundo do footer, altura e alinhamento do texto */
 #footer {
-  margin-top: 50px;
-  height: 40px;
+  background-color: #313131;
+  color: white;
+  margin-top: 30px;
+
+  height: auto;
+}
+
+.footer-content{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #313131;
-  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px, auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem, 0, 3rem, 0;
+}
+
+.social li{
+  margin: 0, 10px;
+}
+
+.social a{
+  text-decoration: none;
+  color: #fff;
 }
 </style>
