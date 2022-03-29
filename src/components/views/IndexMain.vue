@@ -333,9 +333,9 @@
         <h3>Pokedex</h3>
         <p>A melhor forma de classificar seus pokemons.</p>
         <ul class="social">
-          <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-facebook" /></li>
-          <li><a href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>  
+          <li><a href="https://twitter.com/pokemon" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
+          <li><a href="https://www.facebook.com/Pokemon/" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a></li>
+          <li><a href="https://www.instagram.com/pokemon/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>  
         </ul>
       </div>
       <div class="footer-bottom">
@@ -465,8 +465,8 @@ h4 {
   background-color: #313131;
   color: white;
   margin-top: 30px;
-
   height: auto;
+  padding-top: 30px;
 }
 
 .footer-content{
@@ -494,17 +494,42 @@ h4 {
 .social{
   list-style: none;
   display: flex;
+  padding: 0;
   align-items: center;
   justify-content: center;
-  margin: 1rem, 0, 3rem, 0;
+  
 }
 
 .social li{
-  margin: 0, 10px;
+  margin: 10px;
+  
 }
 
 .social a{
   text-decoration: none;
   color: #fff;
+  font-size: 30px;
 }
+
+.social a:hover {
+  color:rgb(238, 255, 2);
+  
+}
+
+.footer-bottom{
+  background: black;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+
+}
+
 </style>
