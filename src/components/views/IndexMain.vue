@@ -1,39 +1,20 @@
 <template>
   <div>
-    <!-- Navbar -->
-    <b-navbar class="Navbar-Pokemon" type="dark">
-      <b-navbar-nav class="navbar">
-        <!-- Logo do site -->
-        <img class="logomarca" src="../assets/img/logo.png" alt="Pokedex" />
-        
-        <b-nav-item href="#">Home</b-nav-item>
-        <!-- Navbar dropdowns -->
-        <b-nav-item-dropdown text="Geração Pokemon" right>
-          <b-dropdown-item href="#" class="drop-geracao">Primeira Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Segunda Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Terceira Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Quarta Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Quinta Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Sexta Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Sétima Geração</b-dropdown-item>
-          <b-dropdown-item href="#" class="drop-geracao">Oitava Geração</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-navbar>
+    <menu-navbar />
 
     <div>
       <section class="hero">
         <div class="hero-text-content">
-          <h1>Welcome to Pokemon game list</h1>
+          <h1>Bem vindo ao Pokedex</h1>
           <p>
             Here you will find an application that consumes the PokeAPI API. It
             lists the Pokemon game generation, where some information is
-            displayed: pokemon count by generation, Região, movements,
-            species, etc...
+            displayed: pokemon count by generation, Região, movements, species,
+            etc...
           </p>
         </div>
         <img
-          src="../assets/img/herobg.png"
+          src="../../assets/img/herobg.png"
           alt="all pokemon image"
           class="heroPara"
         />
@@ -48,7 +29,6 @@
     <!-- Cards -->
     <section class="container mt-4">
       <div class="grid-card">
-
         <!-- Card Primeira Geração -->
         <div class="card">
           <img
@@ -62,11 +42,10 @@
             <h4 class="card-title">1ª Geração</h4>
             <p class="card-text">Região: Kanto</p>
             <p class="card-versions">
-              <b>Versões:</b> <br/>
-              Red-Blue <br/>
-              Yellow <br/>
+              <b>Versões:</b> <br />
+              Red-Blue <br />
+              Yellow <br />
               Yellow
-
             </p>
             <button class="btn btn-secondary">Explorar</button>
           </div>
@@ -100,9 +79,9 @@
             <h4 class="card-title">2ª Geração</h4>
             <p>Região: Johto</p>
             <p>
-              <b>Versões:</b> <br/>
-              Gold-Silver <br/>
-              Crystal <br/>
+              <b>Versões:</b> <br />
+              Gold-Silver <br />
+              Crystal <br />
               Crystal
             </p>
             <button class="btn btn-secondary">Explorar</button>
@@ -123,7 +102,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Card Terceira Geração -->
         <div class="card">
           <img
@@ -137,9 +116,9 @@
             <h4 class="card-title">3ª Geração</h4>
             <p class="card-text">Região: Hoenn</p>
             <p>
-              <b>Versões:</b> <br/>
-              Ruby-Sapphire <br/>
-              Emerald <br/>
+              <b>Versões:</b> <br />
+              Ruby-Sapphire <br />
+              Emerald <br />
               FireRed-LeafGreen
             </p>
             <button class="btn btn-secondary">Explorar</button>
@@ -174,9 +153,9 @@
             <h4 class="card-title">4ª Geração</h4>
             <p class="card-text">Região: Sinnoh</p>
             <p>
-              <b>Versões:</b> <br/>
-              Diamond-Pearl <br/>
-              Platinum <br/>
+              <b>Versões:</b> <br />
+              Diamond-Pearl <br />
+              Platinum <br />
               HeartGold-SoulSilver
             </p>
             <button class="btn btn-secondary">Explorar</button>
@@ -211,9 +190,9 @@
             <h4 class="card-title">5ª Geração</h4>
             <p class="card-text">Região: Unova</p>
             <p>
-              <b>Versões:</b> <br/>
-              Black-White <br/>
-              Black2-White2 <br/>
+              <b>Versões:</b> <br />
+              Black-White <br />
+              Black2-White2 <br />
               Black-White
             </p>
             <button class="btn btn-secondary">Explorar</button>
@@ -248,9 +227,9 @@
             <h4 class="card-title">6ª Geração</h4>
             <p class="card-text">Região: Kalos</p>
             <p>
-              <b>Versões:</b> <br/>
-              X-Y <br/>
-              OmegaRuby-AlphaSapphire <br/>
+              <b>Versões:</b> <br />
+              X-Y <br />
+              OmegaRuby-AlphaSapphire <br />
               X-Y
             </p>
             <button class="btn btn-secondary">Explorar</button>
@@ -285,9 +264,9 @@
             <h4 class="card-title">7ª Geração</h4>
             <p class="card-text">Região: Alola</p>
             <p>
-              <b>Versões:</b> <br/>
-              Sun-Moon <br/>
-              UltraSun-UltraMoon <br/>
+              <b>Versões:</b> <br />
+              Sun-Moon <br />
+              UltraSun-UltraMoon <br />
               Let's Go Pikachu- Let's go Eevee
             </p>
             <button class="btn btn-secondary">Explorar</button>
@@ -322,10 +301,10 @@
             <h4 class="card-title">8ª Geração</h4>
             <p class="card-text">Região: Galar</p>
             <p>
-              <b>Versões:</b> <br/>
-              Sword-Shield <br/>
-              Sword-Shield <br/>
-              Sword-Shield <br/>
+              <b>Versões:</b> <br />
+              Sword-Shield <br />
+              Sword-Shield <br />
+              Sword-Shield <br />
             </p>
             <button class="btn btn-secondary">Explorar</button>
           </div>
@@ -349,48 +328,24 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        Pokedex &copy; 2022
-    </footer>
-
+    <footer id="footer">Pokedex &copy; 2022</footer>
   </div>
 </template>
 
 <script>
+import navbar from "../MenuNavbar";
 
-export default {};
+export default {
+  components: {
+    "menu-navbar": navbar,
+  },
+};
 </script>
 
 <style scoped>
-/* Tamanho da logo */
-.logomarca {
-  max-width: 70px;
-  margin-left: 10px;
-}
-
-/* Tamanho da Navbar e definições da fonte */
-.navbar {
-  display: flex;
-  align-items: center;
-  font-size: 23px;
-  font-family: helvetica;
-  height: 100px;
-}
-
-/* Cor da Navbar Cinza Escuro (#313131) */
-.Navbar-Pokemon {
-  background-color: #313131;
-}
-
-/* A fonte fica branca ao passar o mouse pelo menu, 0.5 seg de transição */
-.Navbar-Pokemon :hover {
-  color: white;
-  transition: 0.5s;
-}
-
 /* Cor de fundo ao passar o mouse muda para cinza claro;
 Cor da fonte muda para branco, 0,2s de transição */
-.drop-geracao :hover{
+.drop-geracao :hover {
   background-color: #616161;
   transition: 0.18s;
   color: white;
@@ -493,7 +448,7 @@ h4 {
 }
 
 /* Define a cor de fundo do footer, altura e alinhamento do texto */
-#footer{
+#footer {
   margin-top: 50px;
   height: 40px;
   display: flex;

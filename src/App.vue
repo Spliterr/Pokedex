@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    
-    <HelloWorld msg="Testando"/>
+    <main-index/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Index from './components/views/IndexMain.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+     'main-index' : Index
+      },
+  name: 'App',
 }
 </script>
 
