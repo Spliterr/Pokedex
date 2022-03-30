@@ -1,43 +1,44 @@
 <template>
-      <div class="grid-card">
-        <!-- Card Primeira Geração -->
-        <div class="card">
-          <img
-            class="card-img-top"
-            data-src="holder.js/100px180/"
-            alt="100%x180"
-            src="https://www.serebii.net/pokemon/art/001.png"
-            data-holder-rendered="true"
-          />
-          <div class="card-body">
-            <h4 class="card-title">1ª Geração</h4>
-            <p class="card-text">Região: Kanto</p>
-            <p class="card-versions">
-              <b>Versões:</b> <br />
-              Red-Blue <br />
-              Yellow <br />
-              Yellow
-            </p>
-            <button class="btn btn-secondary">Explorar</button>
+  <div class="grid-card">
+    <!-- Card Primeira Geração -->
+
+    <div v-for="gera in generation" :key="gera.id" class="card">
+      <img
+        class="card-img-top"
+        data-src="holder.js/100px180/"
+        alt="100%x180"
+        src="https://www.serebii.net/pokemon/art/001.png"
+        data-holder-rendered="true"
+      />
+      <div class="card-body">
+        <h4 class="card-title">{{ gera.name }}</h4>
+        <p class="card-text">Região: Kanto</p>
+        <p class="card-versions">
+          <b>Versões:</b> <br />
+          Red-Blue <br />
+          Yellow <br />
+          Yellow
+        </p>
+        <button href="gera.url" class="btn btn-secondary">Explorar</button>
+      </div>
+      <div>
+        <div
+          data-v-3b81dd4c=""
+          class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
+        >
+          <div class="one-third-slash">
+            <div class="stat">165</div>
+            <div class="stat-value">Movimentos Diferentes</div>
           </div>
-          <div>
-            <div
-              data-v-3b81dd4c=""
-              class="poke-card__unit-stats poke-card__unit-stats--poke clearfix"
-            >
-              <div class="one-third-slash">
-                <div class="stat">165</div>
-                <div class="stat-value">Movimentos Diferentes</div>
-              </div>
-              <div class="one-third">
-                <div class="stat">151</div>
-                <div class="stat-value">Pokemons</div>
-              </div>
-            </div>
+          <div class="one-third">
+            <div class="stat">151</div>
+            <div class="stat-value">Pokemons</div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Card Segunda Geração -->
+    <!-- Card Segunda Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -74,7 +75,7 @@
           </div>
         </div>
 
-        <!-- Card Terceira Geração -->
+        Card Terceira Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -111,7 +112,7 @@
           </div>
         </div>
 
-        <!-- Card Quarta Geração -->
+        Card Quarta Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -148,7 +149,7 @@
           </div>
         </div>
 
-        <!-- Card Quinta Geração -->
+        Card Quinta Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -185,7 +186,7 @@
           </div>
         </div>
 
-        <!-- Card Sexta Geração -->
+        Card Sexta Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -222,7 +223,7 @@
           </div>
         </div>
 
-        <!-- Card Sétima Geração -->
+        Card Sétima Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -259,7 +260,7 @@
           </div>
         </div>
 
-        <!-- Card Oitava Geração -->
+        Card Oitava Geração
         <div class="card">
           <img
             class="card-img-top"
@@ -294,14 +295,32 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+  </div>
 </template>
 
 <script>
+// export default {
+//     name: 'PokeCard',
+// }
+import axios from "axios";
+
 export default {
-    name: 'PokeCard',
-}
+  components: {},
+  name: "App",
+
+  data() {
+    return {
+      generation: [],
+    };
+  },
+
+  mounted() {
+    axios
+      .get("https://pokeapi.co/api/v2/generation")
+      .then((response) => (this.generation = response.data.results));
+  },
+};
 </script>
 
 <style scoped>

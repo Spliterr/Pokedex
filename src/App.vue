@@ -6,12 +6,29 @@
 
 <script>
 import Index from './views/IndexMain.vue'
+import axios from "axios";
 
 export default {
   components: {
      'main-index' : Index
       },
   name: 'App',
+
+  data() {
+    return {
+      generation: [],
+    }
+  },
+
+  mounted() {
+    axios
+    .get ("https://pokeapi.co/api/v2/generation")
+    .then((response) => {
+      console.log(response)
+      response => this.generation = response.results
+      console.log(this.generation)
+    })
+  }
 }
 </script>
 
